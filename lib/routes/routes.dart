@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import '../screens/screens.dart';
 
 class Routes {
@@ -5,9 +7,11 @@ class Routes {
     'listview1': (context) => const ListView1Screen(),
     'listview2': (context) => const ListView2Screen(),
     'home': (context) => const HomeScreen(),
-    'card': (context) => const CardScreen()
+    'card': (context) => const CardScreen(),
+    'alert': (context) => const AlertScreen(),
+    'form': (context) => const FormularioScreen()
   };
 
-  static const initialRoute = 'card';
+  static const initialRoute = 'form';
   //TODO: hacer onGenerateRoute
 }
